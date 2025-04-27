@@ -28,11 +28,11 @@ public class ImplApplicantService implements IApplicantService {
     public CreateApplicantResponse addApplicant(CreateApplicantRequest request) {
         Applicant applicant = new Applicant();
         applicant.setFirstName(request.getName());
-        Applicant createdApplicat = applicantRepository.save(applicant);
+        Applicant createdApplicant = applicantRepository.save(applicant);
 
         CreateApplicantResponse response = new CreateApplicantResponse();
-        response.setId(createdApplicat.getId());
-        response.setName(createdApplicat.getFirstName());
+        response.setId(createdApplicant.getId());
+        response.setName(createdApplicant.getFirstName());
 
         return response;
 

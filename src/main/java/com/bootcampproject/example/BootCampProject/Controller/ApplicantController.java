@@ -1,6 +1,5 @@
 package com.bootcampproject.example.BootCampProject.Controller;
 
-import com.bootcampproject.example.BootCampProject.Entity.Applicant;
 import com.bootcampproject.example.BootCampProject.Service.concrets.ImplApplicantService;
 import com.bootcampproject.example.BootCampProject.Service.dtos.requests.applicant.CreateApplicantRequest;
 import com.bootcampproject.example.BootCampProject.Service.dtos.requests.applicant.UpdateApplicantRequest;
@@ -19,7 +18,6 @@ public class ApplicantController {
 
         this.service = service;
     }
-
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)

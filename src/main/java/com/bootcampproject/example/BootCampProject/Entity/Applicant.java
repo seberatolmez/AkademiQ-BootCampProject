@@ -14,7 +14,8 @@ public class Applicant extends User {
         this.about = about;
     }
 
-   public Applicant() {
+    public Applicant() {
+
    }
 
     public String getAbout() {

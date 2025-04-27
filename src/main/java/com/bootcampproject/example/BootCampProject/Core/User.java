@@ -5,7 +5,7 @@ import jakarta.persistence.*;
 import java.util.Date;
 @Entity
 public class User {
-    private int id;
+    private int id; // attributes
     private String firstName;
     private String lastName;
     private Date dateOfBirth;
@@ -26,7 +26,7 @@ public class User {
     }
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.IDENTITY) // otomatic increasing
     public int getId() {
         return id;
     }
